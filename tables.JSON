@@ -1,0 +1,625 @@
+[
+    {
+        "TABLE_NAME": "UWEC_LIBSOL_KW",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_DSC_SOLAR_ENERGYRATE",
+        "BUILDING_NAME": "davies",
+        "ENERGY_TYPE": "solar",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CAMPUS_MAIN_KW",
+        "BUILDING_NAME": "campus",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_BRIDGMAN_KW",
+        "BUILDING_NAME": "bridgman",
+        "ENERGY_TYPE": "kw",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CENTENNIAL_HALL_KW",
+        "BUILDING_NAME": "centennial",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CHANCELLORS_KW",
+        "BUILDING_NAME": "chancellors",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CHANCELLORS_CHILLER_KW",
+        "BUILDING_NAME": "chancellors",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CREST_COMMONS_KW",
+        "BUILDING_NAME": "crest",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_DAVIES_KW",
+        "BUILDING_NAME": "davies",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_GOVERNORS_KW",
+        "BUILDING_NAME": "governors",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HEATING_PLANT_KW",
+        "BUILDING_NAME": "heating_plant",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HFA_NORTH_KW",
+        "BUILDING_NAME": "haas_north",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HFA_SOUTH_KW",
+        "BUILDING_NAME": "haas_south",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HIBBARD_KW",
+        "BUILDING_NAME": "hibbard",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HILLTOP_KW",
+        "BUILDING_NAME": "hilltop",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HILLTOP_CHILLER_KW",
+        "BUILDING_NAME": "hilltop",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HORAN_KW",
+        "BUILDING_NAME": "horan",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HSS_KW",
+        "BUILDING_NAME": "human_sci",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_LIBRARY_BLDG_ONLY_KW",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_LIBRARY_CHILLER_KW",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_MAINT_BLDG_KW",
+        "BUILDING_NAME": "maintenance",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_MCPHEE_KW",
+        "BUILDING_NAME": "mcphee",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_MURRAY_KW",
+        "BUILDING_NAME": "murray",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_NURSING_KW",
+        "BUILDING_NAME": "nursing",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_OAK_RIDGE_KW",
+        "BUILDING_NAME": "oak_ridge",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_PHILLIPS_NORTH_KW",
+        "BUILDING_NAME": "phillips_north",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_PHILLIPS_SOUTH_KW",
+        "BUILDING_NAME": "phillips_south",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_PUTNAM_KW",
+        "BUILDING_NAME": "putnam",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_SCHNEIDER_KW",
+        "BUILDING_NAME": "schneider",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_SCHOFIELD_KW",
+        "BUILDING_NAME": "schofield",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_SUITES_ELMTR_KW",
+        "BUILDING_NAME": "suites",
+        "ENERGY_TYPE": "flag",
+        "REPORT_INTERVAL": "0",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_SUTHERLAND_KW",
+        "BUILDING_NAME": "sutherland",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_THOMAS_KW",
+        "BUILDING_NAME": "kt",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_THS_ELMTR_KW",
+        "BUILDING_NAME": "towers_south",
+        "ENERGY_TYPE": "flag",
+        "REPORT_INTERVAL": "0",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_THN_ELMTR_KW",
+        "BUILDING_NAME": "towers_north",
+        "ENERGY_TYPE": "flag",
+        "REPORT_INTERVAL": "0",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_ZORN_KW",
+        "BUILDING_NAME": "zorn",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "15",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_LIBRARYSOLAR_KWH",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "solar",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "UWEC_DSC_SOLAR_ENERGYTOTAL",
+        "BUILDING_NAME": "davies",
+        "ENERGY_TYPE": "solar",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_5KV_MAINKWH_NET_TOTAL",
+        "BUILDING_NAME": "campus",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_CHANCELLORSKWH_NET_TOTAL",
+        "BUILDING_NAME": "chancellors",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_CHANCELLORS_CHILLERKWH_NET_TOTAL",
+        "BUILDING_NAME": "chancellors",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_CREST_COMMONSKWH_NET_TOTAL",
+        "BUILDING_NAME": "crest",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_DAVIESKWH_NET_TOTAL",
+        "BUILDING_NAME": "davies",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_GOVERNORSKWH_NET_TOTAL",
+        "BUILDING_NAME": "governors",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HFA_NORTHKWH_NET_TOTAL",
+        "BUILDING_NAME": "haas_north",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HFA_SOUTHKWH_NET_TOTAL",
+        "BUILDING_NAME": "haas_south",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HSSKWH_NET_TOTAL",
+        "BUILDING_NAME": "human_sci",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HEATING_PLANTKWH_NET_TOTAL",
+        "BUILDING_NAME": "heating_plant",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HIBBARDKWH_NET_TOTAL",
+        "BUILDING_NAME": "hibbard",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HILLTOPKWH_NET_TOTAL",
+        "BUILDING_NAME": "hilltop",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HILLTOP_CHILLERKWH_NET_TOTAL",
+        "BUILDING_NAME": "hilltop",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_HORANKWH_NET_TOTAL",
+        "BUILDING_NAME": "horan",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_LIBRARY_BLDG_ONLYKWH_NET_TOTAL",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_LIBRARY_CHILLERKWH_NET_TOTAL",
+        "BUILDING_NAME": "library",
+        "ENERGY_TYPE": "chiller",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_MAINT_BLDGKWH_NET_TOTAL",
+        "BUILDING_NAME": "maintenance",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_MCPHEEKWH_NET_TOTAL",
+        "BUILDING_NAME": "mcphee",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_MURRAYKWH_NET_TOTAL",
+        "BUILDING_NAME": "murray",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_NURSINGKWH_NET_TOTAL",
+        "BUILDING_NAME": "nursing",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_OAK_RIDGEKWH_NET_TOTAL",
+        "BUILDING_NAME": "oak_ridge",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_PHILLIPS_NORTHKWH_NET_TOTAL",
+        "BUILDING_NAME": "phillips_north",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_PHILLIPS_SOUTHKWH_NET_TOTAL",
+        "BUILDING_NAME": "phillips_south",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_SCHNEIDERKWH_NET_TOTAL",
+        "BUILDING_NAME": "schneider",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_SCHOFIELDKWH_NET_TOTAL",
+        "BUILDING_NAME": "schofield",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "RH_1ST_2ND_BASEMENT_KW_HR_TOTAL",
+        "BUILDING_NAME": "suites",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_SUTHERLANDKWH_NET_TOTAL",
+        "BUILDING_NAME": "sutherland",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_THOMASKWH_NET_TOTAL",
+        "BUILDING_NAME": "kt",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_ZORNKWH_NET_TOTAL",
+        "BUILDING_NAME": "zorn",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "TOWERSNORTH3RD_KW_HR_TOTAL",
+        "BUILDING_NAME": "towers_north",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "TOWERSSOUTH3RD_KW_HR_TOTAL",
+        "BUILDING_NAME": "towers_south",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "UWEC_CAMPUS_MAIN_KWH",
+        "BUILDING_NAME": "campus",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_CENTENNIAL_HALLKWH_NET_TOTAL",
+        "BUILDING_NAME": "centennial",
+        "ENERGY_TYPE": "electric",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_BRIDGMANKWH_NET_TOTAL",
+        "BUILDING_NAME": "bridgman",
+        "ENERGY_TYPE": "energy",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_PUTNAMACTIVEENERGYTOTAL",
+        "BUILDING_NAME": "putnam",
+        "ENERGY_TYPE": "kwh",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "ADEOLSON_ADEOLSON_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "ade-olson",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "CHANCELLORS_CHANCELLORS_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "chancellors",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_GOVERNORS_CONDYESTERDAY",
+        "BUILDING_NAME": "governors",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HORAN_CONDYESTERDAY",
+        "BUILDING_NAME": "horan",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "HILLTOP_LL_MISC_CONDYESTERDAY",
+        "BUILDING_NAME": "hilltop",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HSS_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "human_sci",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "MCPHEE_NATATORIUM_CONDENSATE_CONDYESTERDAY",
+        "BUILDING_NAME": "mcphee",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kwh"
+    },
+    {
+        "TABLE_NAME": "UWEC_TOWERSSOUTH3RD_HWCONV_CONDYESTERDAY",
+        "BUILDING_NAME": "towers_south",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_SUITES_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "suites",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "CREST_CWC_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "crest",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_DAVIES_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "davies",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_HIBBARD_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "hibbard",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "UWEC_CENTENNIAL_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "centennial",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "PHILLIPS_P13_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "phillips",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "PHILLIPS_3RD_P164_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "phillips",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    },
+    {
+        "TABLE_NAME": "SCHNEIDER_HALL_SSS_CONDMTR_CONDYESTERDAY",
+        "BUILDING_NAME": "sss",
+        "ENERGY_TYPE": "condensate",
+        "REPORT_INTERVAL": "24",
+        "ENERGY_UNIT": "kw"
+    }
+]
