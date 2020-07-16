@@ -65,7 +65,7 @@ type ComplexityRoot struct {
 
 	Query struct {
 		BuildingData       func(childComplexity int) int
-		BuildingEnergyData func(childComplexity int) int
+		BuildingEnergyData func(childComplexity int, input *model.BuildingDataInput) int
 	}
 }
 
@@ -73,7 +73,7 @@ type BuildingDataResolver interface {
 	EnergyTypes(ctx context.Context, obj *model.BuildingData) ([]string, error)
 }
 type QueryResolver interface {
-	BuildingEnergyData(ctx context.Context) (*model.BuildingEnergyData, error)
+	BuildingEnergyData(ctx context.Context, input *model.BuildingDataInput) (*model.BuildingEnergyData, error)
 	BuildingData(ctx context.Context) (*model.BuildingData, error)
 }
 
@@ -181,7 +181,12 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 			break
 		}
 
-		return e.complexity.Query.BuildingEnergyData(childComplexity), true
+		args, err := ec.field_Query_buildingEnergyData_args(context.TODO(), rawArgs)
+		if err != nil {
+			return 0, false
+		}
+
+		return e.complexity.Query.BuildingEnergyData(childComplexity, args["input"].(*model.BuildingDataInput)), true
 
 	}
 	return 0, false
@@ -252,13 +257,20 @@ type BuildingEnergyData {
 
 type BuildingData {
   building: String!
-  maxDate: Int
-  minDate: Int
+  maxDate: Int!
+  minDate: Int!
   energyTypes: [String!]
 }
 
+input BuildingDataInput {
+  building: String!
+  maxDate: Int!
+  minDate: Int!
+  energyType: String!
+}
+
 type Query {
-  buildingEnergyData: BuildingEnergyData!
+  buildingEnergyData(input: BuildingDataInput): BuildingEnergyData!
   buildingData: BuildingData!
 }
 `, BuiltIn: false},
@@ -280,6 +292,20 @@ func (ec *executionContext) field_Query___type_args(ctx context.Context, rawArgs
 		}
 	}
 	args["name"] = arg0
+	return args, nil
+}
+
+func (ec *executionContext) field_Query_buildingEnergyData_args(ctx context.Context, rawArgs map[string]interface{}) (map[string]interface{}, error) {
+	var err error
+	args := map[string]interface{}{}
+	var arg0 *model.BuildingDataInput
+	if tmp, ok := rawArgs["input"]; ok {
+		arg0, err = ec.unmarshalOBuildingDataInput2ᚖgithubᚗcomᚋuwecᚑinnovationᚑlabsᚋenergyᚑdashboardᚑdatabaseᚑmanipulationᚋgraphᚋmodelᚐBuildingDataInput(ctx, tmp)
+		if err != nil {
+			return nil, err
+		}
+	}
+	args["input"] = arg0
 	return args, nil
 }
 
@@ -377,11 +403,14 @@ func (ec *executionContext) _BuildingData_maxDate(ctx context.Context, field gra
 		return graphql.Null
 	}
 	if resTmp == nil {
+		if !graphql.HasFieldError(ctx, fc) {
+			ec.Errorf(ctx, "must not be null")
+		}
 		return graphql.Null
 	}
 	res := resTmp.(int)
 	fc.Result = res
-	return ec.marshalOInt2int(ctx, field.Selections, res)
+	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _BuildingData_minDate(ctx context.Context, field graphql.CollectedField, obj *model.BuildingData) (ret graphql.Marshaler) {
@@ -408,11 +437,14 @@ func (ec *executionContext) _BuildingData_minDate(ctx context.Context, field gra
 		return graphql.Null
 	}
 	if resTmp == nil {
+		if !graphql.HasFieldError(ctx, fc) {
+			ec.Errorf(ctx, "must not be null")
+		}
 		return graphql.Null
 	}
 	res := resTmp.(int)
 	fc.Result = res
-	return ec.marshalOInt2int(ctx, field.Selections, res)
+	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _BuildingData_energyTypes(ctx context.Context, field graphql.CollectedField, obj *model.BuildingData) (ret graphql.Marshaler) {
@@ -699,9 +731,16 @@ func (ec *executionContext) _Query_buildingEnergyData(ctx context.Context, field
 	}
 
 	ctx = graphql.WithFieldContext(ctx, fc)
+	rawArgs := field.ArgumentMap(ec.Variables)
+	args, err := ec.field_Query_buildingEnergyData_args(ctx, rawArgs)
+	if err != nil {
+		ec.Error(ctx, err)
+		return graphql.Null
+	}
+	fc.Args = args
 	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
-		return ec.resolvers.Query().BuildingEnergyData(rctx)
+		return ec.resolvers.Query().BuildingEnergyData(rctx, args["input"].(*model.BuildingDataInput))
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -1876,6 +1915,42 @@ func (ec *executionContext) ___Type_ofType(ctx context.Context, field graphql.Co
 
 // region    **************************** input.gotpl *****************************
 
+func (ec *executionContext) unmarshalInputBuildingDataInput(ctx context.Context, obj interface{}) (model.BuildingDataInput, error) {
+	var it model.BuildingDataInput
+	var asMap = obj.(map[string]interface{})
+
+	for k, v := range asMap {
+		switch k {
+		case "building":
+			var err error
+			it.Building, err = ec.unmarshalNString2string(ctx, v)
+			if err != nil {
+				return it, err
+			}
+		case "maxDate":
+			var err error
+			it.MaxDate, err = ec.unmarshalNInt2int(ctx, v)
+			if err != nil {
+				return it, err
+			}
+		case "minDate":
+			var err error
+			it.MinDate, err = ec.unmarshalNInt2int(ctx, v)
+			if err != nil {
+				return it, err
+			}
+		case "energyType":
+			var err error
+			it.EnergyType, err = ec.unmarshalNString2string(ctx, v)
+			if err != nil {
+				return it, err
+			}
+		}
+	}
+
+	return it, nil
+}
+
 // endregion **************************** input.gotpl *****************************
 
 // region    ************************** interface.gotpl ***************************
@@ -1902,8 +1977,14 @@ func (ec *executionContext) _BuildingData(ctx context.Context, sel ast.Selection
 			}
 		case "maxDate":
 			out.Values[i] = ec._BuildingData_maxDate(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				atomic.AddUint32(&invalids, 1)
+			}
 		case "minDate":
 			out.Values[i] = ec._BuildingData_minDate(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				atomic.AddUint32(&invalids, 1)
+			}
 		case "energyTypes":
 			field := field
 			out.Concurrently(i, func() (res graphql.Marshaler) {
@@ -2668,12 +2749,16 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return ec.marshalOBoolean2bool(ctx, sel, *v)
 }
 
-func (ec *executionContext) unmarshalOInt2int(ctx context.Context, v interface{}) (int, error) {
-	return graphql.UnmarshalInt(v)
+func (ec *executionContext) unmarshalOBuildingDataInput2githubᚗcomᚋuwecᚑinnovationᚑlabsᚋenergyᚑdashboardᚑdatabaseᚑmanipulationᚋgraphᚋmodelᚐBuildingDataInput(ctx context.Context, v interface{}) (model.BuildingDataInput, error) {
+	return ec.unmarshalInputBuildingDataInput(ctx, v)
 }
 
-func (ec *executionContext) marshalOInt2int(ctx context.Context, sel ast.SelectionSet, v int) graphql.Marshaler {
-	return graphql.MarshalInt(v)
+func (ec *executionContext) unmarshalOBuildingDataInput2ᚖgithubᚗcomᚋuwecᚑinnovationᚑlabsᚋenergyᚑdashboardᚑdatabaseᚑmanipulationᚋgraphᚋmodelᚐBuildingDataInput(ctx context.Context, v interface{}) (*model.BuildingDataInput, error) {
+	if v == nil {
+		return nil, nil
+	}
+	res, err := ec.unmarshalOBuildingDataInput2githubᚗcomᚋuwecᚑinnovationᚑlabsᚋenergyᚑdashboardᚑdatabaseᚑmanipulationᚋgraphᚋmodelᚐBuildingDataInput(ctx, v)
+	return &res, err
 }
 
 func (ec *executionContext) unmarshalOString2string(ctx context.Context, v interface{}) (string, error) {

@@ -17,12 +17,19 @@ type BuildingEnergyData {
 
 type BuildingData {
   building: String!
-  maxDate: Int
-  minDate: Int
+  maxDate: Int!
+  minDate: Int!
   energyTypes: [String!]
 }
 
+input BuildingDataInput {
+  building: String!
+  maxDate: Int!
+  minDate: Int!
+  energyType: String!
+}
+
 type Query {
-  buildingEnergyData: BuildingEnergyData!
+  buildingEnergyData(input: BuildingDataInput): BuildingEnergyData!
   buildingData: BuildingData!
 }

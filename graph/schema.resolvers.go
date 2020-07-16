@@ -15,8 +15,8 @@ func (r *buildingDataResolver) EnergyTypes(ctx context.Context, obj *model.Build
 	panic(fmt.Errorf("not implemented"))
 }
 
-func (r *queryResolver) BuildingEnergyData(ctx context.Context) (*model.BuildingEnergyData, error) {
-	panic(fmt.Errorf("not implemented"))
+func (r *queryResolver) BuildingEnergyData(ctx context.Context, input *model.BuildingDataInput) (*model.BuildingEnergyData, error) {
+
 }
 
 func (r *queryResolver) BuildingData(ctx context.Context) (*model.BuildingData, error) {
