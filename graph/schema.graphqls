@@ -17,8 +17,8 @@ type BuildingEnergyData {
 
 type BuildingData {
   building: String!
-  maxDate: Int!
-  minDate: Int! 
+  maxDate: Int
+  minDate: Int
   energyTypes: [String!]
 }
 
