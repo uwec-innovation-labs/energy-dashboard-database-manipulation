@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -9,7 +8,7 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
 {
     public class TableHelper
     {
-        public async List<TableType> GetTables()
+        public List<TableType> GetTables()
         {
             using (var reader = new StreamReader("tables.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
@@ -18,7 +17,6 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
                 
                 return tables.ToList();
             }
-            return null;
         }
     }
 }

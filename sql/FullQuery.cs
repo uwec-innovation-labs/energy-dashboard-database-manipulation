@@ -6,13 +6,11 @@ namespace EnergyDashboardDatabaseManipulation.sql
 {
     public class FullQuery
     {
-        public FullQuery(SqlConnection connection)
+        public static void FullDBQuery(SqlConnection connection)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName ");
-            sb.Append("FROM [SalesLT].[ProductCategory] pc ");
-            sb.Append("JOIN [SalesLT].[Product] p ");
-            sb.Append("ON pc.productcategoryid = p.productcategoryid;");
+            sb.Append("SELECT * ");
+            sb.Append("FROM UWEC_HORAN_KW;");
             String sql = sb.ToString();
 
             using (SqlCommand command = new SqlCommand(sql, connection))

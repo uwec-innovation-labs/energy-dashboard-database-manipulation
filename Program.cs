@@ -1,4 +1,6 @@
 ﻿using System;
+using EnergyDashboardDatabaseManipulation.sql;
+using EnergyDashboardDatabaseManipulation.TableHelper;
 
 namespace EnergyDashboardDatabaseManipulation
 {
@@ -6,7 +8,7 @@ namespace EnergyDashboardDatabaseManipulation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            sql.FullQuery.FullDBQuery(sql.DatabaseDriver.SQLConnect());
         }
     }
 }
