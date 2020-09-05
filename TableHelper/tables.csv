@@ -1,4 +1,4 @@
-TABLE_NAME,BUILDING_NAME,ENERGY_TYPE,REPORT_INTERVAL,ENERGY_UNIT
+TableName,BuildingName,EnergyType,ReportInterval,EnergyUnit
 UWEC_LIBSOL_KW,library,electric,15,kw
 UWEC_DSC_SOLAR_ENERGYRATE,davies,solar,15,kw
 UWEC_CAMPUS_MAIN_KW,campus,electric,15,kw

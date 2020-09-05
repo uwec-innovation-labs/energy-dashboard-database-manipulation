@@ -23,9 +23,15 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
         public string? EnergyType { get; set; }
 
         /// <summary>
+        /// Gets or sets energy unit
+        /// kw, kwh
+        /// </summary>
+        public string? EnergyUnit { get; set; }
+
+        /// <summary>
         /// Gets or Sets the energy value
         /// </summary>
-        public long? EnergyValue { get; set; }
+        public float? EnergyValue { get; set; }
 
         /// <summary>
         /// Gets or Sets the time the

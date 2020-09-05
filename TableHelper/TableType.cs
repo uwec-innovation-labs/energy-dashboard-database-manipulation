@@ -15,11 +15,13 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
 
         /// <summary>
         /// Gets or sets energy type
+        /// i.e. Electric, Solar, etc.
         /// </summary>
         public string? EnergyType { get; set; }
 
         /// <summary>
         /// Gets or Sets energy unit 
+        /// i.e. kw, kwh
         /// </summary>
         public string? EnergyUnit { get; set; }
 

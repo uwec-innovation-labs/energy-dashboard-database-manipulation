@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,20 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="sql\" />
     <Folder Include="CouchBase\" />
     <Folder Include="TableHelper\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CouchbaseNetClient" Version="3.0.4" />
     <PackageReference Include="CsvHelper" Version="15.0.5" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="TableHelper\tables.csv" />
+    <EmbeddedResource Include="TableHelper\tables.csv">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TableHelper\tables.csv" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="System.Composition.AttributedModel" Version="1.4.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
   </ItemGroup>
 
