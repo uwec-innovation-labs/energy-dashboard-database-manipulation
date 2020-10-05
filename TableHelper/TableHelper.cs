@@ -22,5 +22,19 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
                 return tables.ToList();
             }
         }
+        public static List<DBType> GetSampleData()
+        {
+            using var stream = typeof(TableHelper).Assembly.GetManifestResourceStream(typeof(TableHelper), "export.csv");
+            if (stream == null)
+            {
+                throw new System.ArgumentNullException("File not found");
+            }
+            using (var csv = new CsvReader(new StreamReader(stream), CultureInfo.InvariantCulture))
+            {
+                var tables = csv.GetRecords<DBType>();
+
+                return tables.ToList();
+            }
+        }
     }
 }
