@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EnergyDashboardDatabaseManipulation.sql
 {
-    /* This is a work in progress */
+    /* This is a work in progress 
     public class SeedData
     {
         public async static Task<List<DBDocType>> FullSeed()
@@ -30,6 +30,7 @@ namespace EnergyDashboardDatabaseManipulation.sql
             return data;
         }
     }
+    */
 }
 
 

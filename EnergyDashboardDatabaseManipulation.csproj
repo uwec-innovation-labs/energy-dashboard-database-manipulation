@@ -6,16 +6,10 @@
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="TableHelper\export.csv" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="CouchbaseNetClient" Version="3.0.4" />
     <PackageReference Include="CsvHelper" Version="15.0.5" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TableHelper\export.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="TableHelper\tables.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
