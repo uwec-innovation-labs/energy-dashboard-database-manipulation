@@ -404,3 +404,6 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+/test-conn.txt
+/Properties/launchSettings.json
+/TableHelper/export.csv

@@ -6,27 +6,18 @@ namespace EnergyDashboardDatabaseManipulation.sql
 {
     public class DatabaseDriver
     {
-        public SqlConnection SQLConnect()
+        public static SqlConnectionStringBuilder SQLConnectionString()
         {
-            try
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                DataSource = Environment.GetEnvironmentVariable("SQL_ADDR"),
+                UserID = Environment.GetEnvironmentVariable("SQL_USER"),
+                Password = Environment.GetEnvironmentVariable("SQL_PASS"),
+                InitialCatalog = Environment.GetEnvironmentVariable("SQL_DATABASE")
+            };
 
-                builder.DataSource = "<your_server.database.windows.net>";
-                builder.UserID = "<your_username>";
-                builder.Password = "<your_password>";
-                builder.InitialCatalog = "<your_database>";
+            return builder;
 
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
-                { 
-                    connection.Open();
-                   
-                }
-            }
-            catch (SqlException e)
-            {
-                Console.WriteLine(e.ToString());
-            }
         }
     }
 }

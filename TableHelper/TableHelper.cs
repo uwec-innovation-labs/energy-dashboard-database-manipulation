@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -9,16 +8,33 @@ namespace EnergyDashboardDatabaseManipulation.TableHelper
 {
     public class TableHelper
     {
-        public async List<TableType> GetTables()
+        public static List<TableType> GetTables()
         {
-            using (var reader = new StreamReader("tables.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            using var stream = typeof(TableHelper).Assembly.GetManifestResourceStream(typeof(TableHelper), "tables.csv");
+            if (stream == null)
+            {
+                throw new System.ArgumentNullException("File not found");
+            }
+            using (var csv = new CsvReader(new StreamReader(stream), CultureInfo.InvariantCulture))
             {
                 var tables = csv.GetRecords<TableType>();
                 
                 return tables.ToList();
             }
-            return null;
+        }
+        public static List<DBType> GetSampleData()
+        {
+            using var stream = typeof(TableHelper).Assembly.GetManifestResourceStream(typeof(TableHelper), "export.csv");
+            if (stream == null)
+            {
+                throw new System.ArgumentNullException("File not found");
+            }
+            using (var csv = new CsvReader(new StreamReader(stream), CultureInfo.InvariantCulture))
+            {
+                var tables = csv.GetRecords<DBType>();
+
+                return tables.ToList();
+            }
         }
     }
 }
