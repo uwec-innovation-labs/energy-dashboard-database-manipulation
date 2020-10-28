@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="CouchbaseNetClient" Version="3.0.4" />
     <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TableHelper\export.csv">
