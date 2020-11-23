@@ -11,7 +11,7 @@ namespace EnergyDashboardDatabaseManipulation.Couchbase
     {
         public async static Task FullDBPopulation()
         {
-            var cluster = await Cluster.ConnectAsync(
+            orvar cluster = await Cluster.ConnectAsync(
                 Environment.GetEnvironmentVariable("COUCH_ADDR").ToString(),
                 Environment.GetEnvironmentVariable("COUCH_USER").ToString(),
                 Environment.GetEnvironmentVariable("COUCH_PASS").ToString());

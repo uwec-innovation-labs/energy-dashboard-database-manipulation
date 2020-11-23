@@ -6,6 +6,14 @@
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="CouchBase\CreateIndexs.cs" />
+    <Compile Remove="CouchBase\DateQuery.cs" />
+    <Compile Remove="CouchBase\FullPopulation.cs" />
+    <Compile Remove="CouchBase\UpdateDatabase.cs" />
+    <Compile Remove="Mongo\FullPopulation.cs" />
+    <Compile Remove="Mongo\PartialPopulation.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="CouchbaseNetClient" Version="3.0.4" />
     <PackageReference Include="CsvHelper" Version="15.0.5" />
     <PackageReference Include="MongoDB.Driver" Version="2.11.3" />
@@ -14,6 +22,14 @@
     <EmbeddedResource Include="TableHelper\tables.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CouchBase\CreateIndexs.cs" />
+    <None Include="CouchBase\DateQuery.cs" />
+    <None Include="CouchBase\FullPopulation.cs" />
+    <None Include="CouchBase\UpdateDatabase.cs" />
+    <None Include="Mongo\FullPopulation.cs" />
+    <None Include="Mongo\PartialPopulation.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.AzureKeyVault.HostingStartup" Version="2.0.4" />

@@ -1,15 +1,15 @@
 ﻿using Couchbase;
 using Couchbase.Query;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EnergyDashboardDatabaseManipulation.CouchBase
 {
+    
     class DateQuery
     {
         /* Only works when primary and date index has been created on bucket */
+    
         public static async Task<DateTimeOffset> GetLatestDate(string bucketID)
         {
             DateTimeOffset returnDate; 
@@ -41,6 +41,10 @@ namespace EnergyDashboardDatabaseManipulation.CouchBase
 
             return DateTimeOffset.Now; 
         }
+        
+       
     }
+
+
 }
 

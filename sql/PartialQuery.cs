@@ -1,4 +1,5 @@
-﻿using EnergyDashboardDatabaseManipulation.TableHelper;
+﻿using EnergyDashboardDatabaseManipulation.Mongo;
+using EnergyDashboardDatabaseManipulation.TableHelper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -21,7 +22,14 @@ namespace EnergyDashboardDatabaseManipulation.sql
                 {
                     /* This isn't actually dynamic yet */
                     // TODO: Create dynamic date query to grab all new data after last synced time
-                    String sql = $"SELECT t.TIMESTAMP, t.VALUE FROM {table.TableName} as t WHERE t.TIMESTAMP > Convert(datetime, '2020-09-24 06:45:00.973');";
+
+                  
+                    DateTimeOffset returnDate = DateQuery.GetLatestDate();
+                   
+                    String dateFormat = returnDate.ToString("yyyy-MM-dd H:mm:ss:fff");
+
+                  
+                    String sql = $"SELECT t.TIMESTAMP, t.VALUE FROM {table.TableName} as t WHERE t.TIMESTAMP > Convert(datetime, {dateFormat});";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {

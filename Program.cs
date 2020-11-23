@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using EnergyDashboardDatabaseManipulation.Couchbase;
-using EnergyDashboardDatabaseManipulation.CouchBase;
+using EnergyDashboardDatabaseManipulation.Mongo;
 using EnergyDashboardDatabaseManipulation.sql;
 using EnergyDashboardDatabaseManipulation.TableHelper;
 
@@ -10,15 +9,19 @@ namespace EnergyDashboardDatabaseManipulation
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            MainAsync().GetAwaiter().GetResult();
+           
+            DateTimeOffset date = DateQuery.GetLatestDate();
+            Console.WriteLine(date); 
+
+            //MainAsync().GetAwaiter().GetResult();
 
         }
 
         private static async Task MainAsync()
         {
-            await FullPopulation.FullDBPopulation();
+           // await FullPopulation.FullDBPopulation();
         }
 
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EnergyDashboardDatabaseManipulation.Mongo
 {
-    public class FullPopulation
+    class FullPopulation
     {
         public async static Task FullDBPopulation()
         {
