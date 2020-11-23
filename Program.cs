@@ -7,7 +7,7 @@ using EnergyDashboardDatabaseManipulation.TableHelper;
 
 namespace EnergyDashboardDatabaseManipulation
 {
-    class Program
+    public class Program
     {
         public static async Task Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace EnergyDashboardDatabaseManipulation
 
         private static async Task MainAsync()
         {
-           // await FullPopulation.FullDBPopulation();
+            // await FullPopulation.FullDBPopulation();
         }
 
     }

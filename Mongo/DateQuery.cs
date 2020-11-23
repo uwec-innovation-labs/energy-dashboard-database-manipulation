@@ -5,10 +5,8 @@ using MongoDB.Driver;
 
 namespace EnergyDashboardDatabaseManipulation.Mongo
 {
-    class DateQuery
+    public class DateQuery
     {
-     
-
         public static DateTimeOffset GetLatestDate()
         {
             DateTimeOffset returnDate;
@@ -33,8 +31,6 @@ namespace EnergyDashboardDatabaseManipulation.Mongo
             Console.WriteLine(date);
             returnDate = DateTimeOffset.FromUnixTimeSeconds(date);
             return returnDate;
-
-
         }
 
     }
