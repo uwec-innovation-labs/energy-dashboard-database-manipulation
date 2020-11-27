@@ -11,7 +11,8 @@ namespace EnergyDashboardDatabaseManipulation
     {
         public static async Task Main(string[] args)
         {
-           
+
+            await FullPopulation.FullDBPopulation(); 
             DateTimeOffset date = DateQuery.GetLatestDate();
             Console.WriteLine(date); 
 
